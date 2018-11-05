@@ -1,0 +1,606 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	margin:0;
+	height: 100%;
+}
+#cabecera_pagina{
+}
+#tb_titulo
+{
+	width:100%;
+	border-spacing:0;
+}
+#tb_titulo td{
+	padding:0;
+	background-color:#DDECF7;
+}
+#tb_titulo tr:nth-child(1) td:nth-child(2){
+	width:60%;
+	text-align:center;
+	font-size:1.5em;
+	font-weight:bold;
+	color:#006699;
+}
+#tb_titulo tr:nth-child(1) td:nth-child(1){
+	width:20%;
+}
+#tb_padre{
+	height:500px;
+}
+.centrarth {
+	text-align: center;
+}
+#tb1{
+	/*height:100%;*/
+	width:100%;
+	border: 4px double #999999;
+	border-spacing: 7px;
+}
+#tb1 td{
+	width:10%;
+	border:1px solid #f1eaee;
+	padding:0;
+	cursor:pointer;
+	border-radius: 7px;
+	background-color: #FFFFF0;
+}
+#tb1 tr:not(:first-child) td{
+	height:5em;
+}
+#tb1 tr:first-child td{
+	text-align:center;
+	font-weight: bold;
+	color:teal;
+}
+#tb1 tr td:nth-child(1){
+	text-align:center;
+	width:3%;
+	background-color: beige;
+	color:steelblue;
+}
+.borde{
+	border: 3px solid #000000;
+}
+#ventana_config{
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  width:800px;
+  height:600px;
+  margin-top: -300px;
+  margin-left: -400px;  
+  border: 1px solid #999999;
+  background-color:#FFFFFF;
+  border-radius: 20px;
+  box-shadow: 7px 7px 20px #999;
+  z-index:5000;
+  display:none;
+}
+#cabecera_config{
+	height:20px;
+	background-color:#FFFFFF;
+	border-radius:20px 20px 0 0;
+	text-align:center;
+	padding-top:2px;
+	border-bottom:1px dashed #CCC;
+}
+#cabecera_config span{
+	padding:1px 7px 0 0;
+	float:right;
+	cursor:pointer;
+}
+#ventana {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  width:600px;
+  height:600px;
+  margin-top: -300px;
+  margin-left: -300px;  
+  border: 1px solid #999999;
+  background-color:#FFFFFF;
+  border-radius: 20px;
+  box-shadow: 7px 7px 20px #999;
+  display:none;
+  z-index:5000;
+}
+#cabeceraventana{
+	border:0;
+	width: 100%;
+	border-bottom:1px solid #CCC;
+	border-radius: 20px 20px 0 0;
+	background-color:#0099CC;
+}
+#equis{
+	text-align:right;
+	padding-right:15px;
+}
+a.cerrar:hover{
+	color:white;	
+}
+a.cerrar:link{
+	color:white;
+}
+a.cerrar:visited{
+	color:white;
+}
+a:link{
+	color:#000000;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+#fondo{
+	display: none;
+	  position: fixed;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background: rgba(90, 90, 90, 0.5);
+	  z-index:2000;
+}
+#contenedor{
+	padding: 10px;
+	overflow-y:auto;
+	height:90%;
+}
+#contenedor_config{
+	padding: 2px 5px 2px 5px;
+	overflow-y: auto;
+	height: 90%;
+}
+.logo{
+	width:600px;
+	height:600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:3em;
+	background-image:url(../images/logothink.png);
+	background-size:contain;
+	opacity:0.2;
+
+}
+
+.div_inm{
+/*	height:100%;
+	border-radius: 7px;
+	height:100%;*/
+	/*background-color:#66CCFF;*/
+}
+#contenido_caja_inm{
+	text-align:center;
+	padding-top:1px;
+	padding-bottom: 5px;
+	border-radius: 0 0 7px 7px;
+}
+.acronimo_estado_inm{
+	font-size:1.4em;
+	/*color:#333333;*/
+	text-transform:uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.cabecerainm{
+	height:27px;
+	text-align:center;
+	font-variant:small-caps;
+	font-size:18px;
+	border-radius: 7px 7px 0 0;
+	padding-top:5px;
+	padding-right: 2px;
+
+}
+#divlogo{
+	width:25px;
+	height:25px;
+	margin-left:3px;
+/*	background-color:#FFFFFF;
+	background-image:url(../images/departamento.png);
+*/	background-size:contain;
+	float:left;
+}
+.icono_extra{
+	width: 18px;
+	height: 18px;
+	background-size: contain;
+}
+.div_iconos{
+	height:22px;
+	width: auto;
+}
+.div_iconos div{
+	float: left;
+}
+.fondo_icono{
+	background-color: steelblue;
+	padding:5px;
+	border-radius:50%;
+	margin-left: 5px;
+}
+.fondo_icono:hover{
+	background-color: darkblue;
+}
+.icono_transparente{
+	opacity: 0.2;
+}
+.elim_inm{
+	color:#0099CC;
+	float:right;
+	margin-top:-5px;
+}
+a.elim_inm:hover{
+	color:white;
+}
+#cliente_vendedor{
+	height:10px;
+	padding-left:2px;
+	text-align:left;
+	font-size:9px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+a.link_usr:hover{
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+}
+.icon_usr{
+	height:12px;
+	width:12px;
+	float:left;
+}
+a.link_usr{
+	margin-left:3px;
+}
+#img_config{
+	height:25px;
+	width:25px;
+	margin-bottom:-5px;
+	cursor:pointer;
+}
+#cliente_vendedor2{
+	text-align:center;
+	font-size:9px;
+	font-family:Verdana, Geneva, sans-serif;
+	
+}
+.icon_usr2{
+	height:12px;
+	width:12px;
+	margin-top:-3px;
+}
+a.link_cliente:hover{
+/*	font-size:12px;
+*/	font-weight:bold;
+	text-decoration:none;
+}
+.pie{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	margin-left:-8px;
+	background-color: rgba(5, 54, 110,0.7);
+}
+#color_estados{
+}
+#color_estados td{
+	padding:1px 5px;
+	white-space:nowrap;
+	cursor:pointer;
+	text-transform:uppercase;
+}
+#color_estados td div{
+	padding:0 1em;
+}
+ul{
+	color:white;
+	margin:0;
+}
+
+#pie_vendedores{
+	text-align:center;
+}
+#pie_vendedores ul li{
+	font-size:12px;
+	display:inline-block;
+	margin-left:15px;
+
+}
+#pie_vendedores ul li,#pie_clientes ul li{
+	cursor:pointer;
+}
+#pie_vendedores ul li a:hover{
+	color:yellow;
+}
+#pie_clientes ul li{
+	font-size:12px;
+	display:inline-block;
+	margin-left:15px;
+}
+#pie_clientes{
+	text-align:center;
+}
+
+#pie_clientes ul li a:hover{
+	color:yellow;
+}
+#pie_logo{
+	height:3em;
+	width:3em;
+	background-color:yellow;
+	background-image:url(../images/logothink.png);
+	background-size:contain;
+	padding:5px;
+	float:left;
+}
+#pie_logo:hover{
+	border: 1px solid lightblue;
+}
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+.cantidad_amb_propio{
+	background-color:#FFFFCC;
+}
+.tabla_cebra{
+	width: 100%;
+}
+.tabla_cebra th{
+	background-color:#B2CEE8;
+}
+.tabla_cebra tr:nth-child(1){
+	background-color:#0099CC;
+}
+.tabla_cebra tr:nth-child(n+2):nth-child(even){
+	background-color:#DAEBF8;
+}
+.tabla_cebra tr:hover td{
+	background-color:#FFFFCC;
+}
+.tb_nuevo_proy{
+	border:0;
+	margin-top:5px;
+}
+.op_elim{
+	background-image:url("../images/elim.png");
+}
+.op_elim2,.op_elim3,.op_elim4,.op_elim5,.op_elim6{
+	background-image: url("../images/elim.png");
+}
+.op_editar, .op_elim, .op_elim2,.op_elim3,.op_elim4,.op_elim5,.op_elim6{
+	width:1em;
+	height:1em;
+	background-size:contain;
+	background-position: 50% 50%;
+}
+.op_elim7,.op_elim8,.op_elim9{
+	background-image: url("../images/elim.png");
+	width:1em;
+	height:1em;
+	background-size:contain;
+	background-position: 50% 50%;
+}
+.div_nuevo_registro{
+	background-color:#ECFAFB;
+}
+.fondo_amarillo{
+	background-color:#F9F7CC;
+}
+.celda_menu a:link,.celda_menu a:visited{
+	color:#456EA6;
+}
+.boton_nuevo_reg{
+	padding: 0.5em 1em;
+	background-color: white;
+	border: 0;
+	float: right;
+	text-decoration: underline;
+}
+.boton_nuevo_reg:hover{
+	background-color: #83AFD5;
+	color:white;
+}
+#ventana_config .boton_guardar{
+	padding:.5em 1em;
+	background-color: #B6D6DC;
+}
+#ventana_config .boton_guardar:hover{
+	background-color: #5087D2;
+	color:white;
+}
+#ventana_config .boton_cancelar{
+	padding:.5em 1em;
+	background-color: #F4CBD0;
+}
+#ventana_config .boton_cancelar:hover{
+	background-color: #FF0000;
+	color:white;
+}
+.papa_barra{
+	position: fixed;
+	height: 100%;
+	top:22px;
+}
+.barra{
+	width: 100px;
+	height:100%;
+	overflow: hidden;
+	background-color: rgb(255, 255, 153,0.8);
+	margin-left: -100px;
+	transition: .8s all;
+	float:left;
+}
+.muestra{
+	margin:0;
+}
+.barra_tipos{
+	margin: 0;
+	padding: 0;
+
+}
+.barra_un_tipo{
+	list-style: none;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	margin:10px;
+	color:blue;
+	cursor: pointer;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+}
+.barra_un_tipo:hover{
+	border:1px solid blue;
+}
+.boton_barra{
+	cursor: pointer;
+	background-image: url("../images/menu.png");
+	height:40px;
+	width:40px;
+	background-size: contain;
+	float: left;
+}
+.iconox{
+	background-image: url("../images/Cross.png");
+}
+.boton_barra:hover{
+	background-color:#dff9fb; 
+}
+.masfila{
+	margin-left: 41px;
+}
+.titulo_pie_vendedoresyclientes{
+	color:white;
+	float: left;
+	margin-left: 5px;
+}
+.menu_contextual{
+	width: 200px;
+	height: auto;
+	position: absolute;
+	border:1px solid rgb(220,220,220);
+	border-radius: 10px;
+	background-color: rgba(255,253,234,1.0);
+	display: none;
+	padding: 5px;
+}
+
+.opcion_menu_contextual{
+	cursor: pointer;
+	padding:3px;
+	text-transform: uppercase; 
+	color:darkblue; 
+}
+.opcion_menu_contextual:hover{
+	background-color: lightblue;
+	border-radius: 5px;
+	color:blue;
+}
+.titulo_menu_contextual{
+	border-bottom: 1px solid lightblue;
+	color:rgb(0,153,204);
+	text-align: center;
+}
+.color1{
+	height: 15px;
+	width: 80px;
+	background-color: blue;
+	border-radius: 7px 7px 0 0;
+	color: white;
+
+}
+.color2{
+	height:35px;
+	width:80px;
+	background-color: lightblue;
+	border-radius: 0 0 7px 7px;
+	color: black;
+}
+.color1,.color2{
+	text-align: center;
+	font-size: .8em;
+}
+.columna_nivel1{
+	height: 2.3em;
+	font-size: 1em;
+	background-color: beige;
+	overflow-y: hidden;
+}
+.columna_nivel2{
+	height: 2.3em;
+	background-color: khaki;
+	overflow-y: hidden;
+}
+.clase_tabla_columnas td input{
+	width: 4em;
+}
+.clase_tabla_columnas tr:first-child td{
+	text-align: right;
+}
+.casilla_propaga{
+	width: 5em;
+}
+.antiguo_valor{
+	color:gray;
+	float: left;
+	width: 4em;
+	text-align: right;
+}
+.tb_precios td:nth-child(2), .clase_tabla_columnas td:nth-child(2){
+	background-color: whitesmoke;
+}
+.tb_precios td:nth-child(3), .clase_tabla_columnas td:nth-child(3){
+	background-color: oldlace;
+}
+.tb_precios td:nth-child(4), .clase_tabla_columnas td:nth-child(4){
+	background-color: ivory;
+}
+.centrar_cont{
+	text-align: center;
+}
+.icono_usr_sistema{
+	width: 15px;
+	height: 15px;
+	margin-bottom: 0;
+}
+#div_mapa{
+	height: 500px;
+	width: 100%;
+	background-image: url("images/logothink.png");
+}
+#div_mapa .pin{
+	position:absolute;
+  	/*url of the marker*/
+  	background:url(http://maps.gstatic.com/mapfiles/markers2/marker.png) no-repeat;
+  	/*center the marker*/
+  	top:50%;left:50%;
+  	z-index:1;
+  	/*fix offset when needed*/
+  	margin-left:-10px;
+  	margin-top:-34px;
+  	/*size of the image*/
+  	height:34px;
+  	width:20px;
+  	cursor:pointer;
+}
+.ventana_marca img{
+	background-color: beige;
+}
+#proyectos{
+	border: 1px solid white;
+	background-color: oldlace;
+	color: navy;
+}
